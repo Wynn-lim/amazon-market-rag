@@ -1,0 +1,6 @@
+# 统一换行符为 LF：仓库会在 GitHub Actions 的 Linux runner 上构建
+* text=auto eol=lf
+
+# 二进制与生成物不参与换行符归一
+*.png binary
+*.jpg binary

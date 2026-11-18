@@ -1,0 +1,90 @@
+[
+  {
+    "id": "posture-cushion",
+    "name": "办公矫姿坐垫 / Office Posture Cushion",
+    "category": "Health & Household > Seat Cushions",
+    "note": "容量与格局都在健康区间，两层都过——可以进入细评",
+    "metrics": {
+      "keywordSearchVolume": 74000,
+      "keywordGrowthRate": 0.22,
+      "top100AvgMonthlySales": 1180,
+      "top20MonthlySalesSum": 26000,
+      "newProducts6m": 9,
+      "newProductShare": 0.15,
+      "top3BrandShare": 0.29,
+      "top10SalesShare": 0.48,
+      "top20AvgReviews": 520,
+      "clickConcentration": 0.34,
+      "avgRating": 4.0,
+      "medianMonthlySales": 430,
+      "meanMonthlySales": 1180,
+      "avgPrice": 32
+    }
+  },
+  {
+    "id": "shower-chair",
+    "name": "老人防滑洗澡椅 / Shower Chair for Elderly",
+    "category": "Health & Household > Bathroom Safety",
+    "note": "第一层过关、第二层偏紧：有需求但被锁死，需要差异化理由",
+    "metrics": {
+      "keywordSearchVolume": 32000,
+      "keywordGrowthRate": 0.09,
+      "top100AvgMonthlySales": 820,
+      "top20MonthlySalesSum": 14500,
+      "newProducts6m": 6,
+      "newProductShare": 0.11,
+      "top3BrandShare": 0.37,
+      "top10SalesShare": 0.58,
+      "top20AvgReviews": 1450,
+      "clickConcentration": 0.47,
+      "avgRating": 4.5,
+      "medianMonthlySales": 300,
+      "meanMonthlySales": 820,
+      "avgPrice": 46
+    }
+  },
+  {
+    "id": "yoga-mat",
+    "name": "瑜伽垫 / Yoga Mat",
+    "category": "Sports & Outdoors > Yoga",
+    "note": "红海反例：品牌集中度与新品占比同时命中否决线",
+    "metrics": {
+      "keywordSearchVolume": 486000,
+      "keywordGrowthRate": 0.06,
+      "top100AvgMonthlySales": 5200,
+      "top20MonthlySalesSum": 210000,
+      "newProducts6m": 4,
+      "newProductShare": 0.07,
+      "top3BrandShare": 0.46,
+      "top10SalesShare": 0.67,
+      "top20AvgReviews": 12400,
+      "clickConcentration": 0.61,
+      "avgRating": 4.6,
+      "medianMonthlySales": 260,
+      "meanMonthlySales": 5200,
+      "avgPrice": 24
+    }
+  },
+  {
+    "id": "pet-cooling-mat",
+    "name": "宠物降温垫 / Pet Cooling Mat",
+    "category": "Pet Supplies > Cooling Mats",
+    "note": "需求不足反例：核心词搜索量低于健康线，第二层再好看也没意义",
+    "metrics": {
+      "keywordSearchVolume": 6400,
+      "keywordGrowthRate": -0.04,
+      "top100AvgMonthlySales": 430,
+      "top20MonthlySalesSum": 6800,
+      "newProducts6m": 8,
+      "newProductShare": 0.18,
+      "top3BrandShare": 0.21,
+      "top10SalesShare": 0.44,
+      "top20AvgReviews": 260,
+      "clickConcentration": 0.29,
+      "avgRating": 4.1,
+      "medianMonthlySales": 210,
+      "meanMonthlySales": 430,
+      "avgPrice": 19
+    }
+  }
+]

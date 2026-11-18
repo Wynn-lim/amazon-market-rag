@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>亚马逊选品 · 两层框架 RAG Demo</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='4' y='2' rx='2' fill='%230ca30c'/%3E%3Crect width='16' height='4' y='8' rx='2' fill='%23fab219'/%3E%3Crect width='9' height='4' y='14' rx='2' fill='%23d03b3b'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>亚马逊选品 · 两层框架体检</h1>
+    <p class="sub">第一层看「有没有肉吃」，第二层看「缝隙在哪」。指标阈值来自内置知识库，可检索、可追问。</p>
+  </div>
+  <div class="badge" id="modeBadge">加载中…</div>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="score">市场体检</button>
+  <button class="tab" data-tab="ask">知识问答</button>
+  <button class="tab" data-tab="kb">检索试玩</button>
+</nav>
+
+<main>
+  <!-- ============ 市场体检 ============ -->
+  <section id="tab-score" class="panel">
+    <div class="samples" id="samples"></div>
+
+    <div class="cols">
+      <form id="metricForm" class="card"></form>
+
+      <div id="scoreOut" class="card out">
+        <p class="empty">选一个示例市场，或直接在左侧填入卖家精灵的数值。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 知识问答 ============ -->
+  <section id="tab-ask" class="panel" hidden>
+    <div class="card">
+      <div id="chat" class="chat"></div>
+      <div class="chips" id="chips"></div>
+      <form id="askForm" class="ask-row">
+        <input id="askInput" type="text" placeholder="问一个选品问题，例如：点击集中度多高算危险？" autocomplete="off">
+        <button type="submit">提问</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ 检索试玩 ============ -->
+  <section id="tab-kb" class="panel" hidden>
+    <div class="card">
+      <form id="kbForm" class="ask-row">
+        <input id="kbInput" type="text" value="新品进榜" placeholder="输入关键词，看 BM25 检索命中了哪些片段" autocomplete="off">
+        <button type="submit">检索</button>
+      </form>
+      <div id="kbOut" class="kb-out"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span id="kbStat"></span>
+  <span>规则旁的标注：<b>原文</b> = 框架里写明的数字，<b>已确认</b> = demo 补档且你确认过，<b>自定</b> = 仍待你确认。</span>
+  <span>所有销量数值都是工具估算：头部 ASIN ±30%、腰部以下可能超 50%，请按区间而非单点使用。</span>
+</footer>
+
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

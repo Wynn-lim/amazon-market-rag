@@ -1,0 +1,17 @@
+# 依赖与生成物
+node_modules/
+
+# 本地运行产物
+server.log
+*.log
+
+# 静态构建产物（由 scripts/build-static.mjs 生成，GitHub Actions 里重新构建）
+site/
+
+# 浏览器自动化留下的临时文件
+.playwright-mcp/
+*.png
+
+# 系统文件
+Thumbs.db
+.DS_Store
